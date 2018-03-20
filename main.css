@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+nav {
+  height: 11vh;
+  width: 100%;
+  background-color: #343a40;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo {
+  margin-left: 5%;
+  color: #fed136;
+  font-size: 1.25em;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+.menu {
+  margin-right: 5%;
+  background-color: #fed136;
+  height: 3em;
+  width: 6em;
+  border-radius: 8%;
+  box-sizing: border-box;
+  border: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 0.75em;
+  text-transform: uppercase;
+  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.pages {
+  display: none;
+}
+
+/* @media (min-width: 767px) {
+  .logo {
+    margin-left: 15%;
+  }
+  .menu {
+    margin-right: 15%;
+  }
+
+  nav {
+    height: 9vh;
+  }
+} */
+
+@media (min-width: 995px) {
+  .logo {
+    margin-left: 5%;
+  }
+  .menu {
+    display: none;
+  }
+  .pages {
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    letter-spacing: 1px;
+  }
+  .pages a {
+    margin-right: 15px;
+  }
+
+  nav {
+    height: 11vh;
+    font-size: 1.2em;
+  }
+}
